@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav role="navigation">
+          <button id="menu-toggle">
+            <svg id="burger" viewBox="0 0 100 80" width="40" height="40">
+              <rect width="100" height="12"></rect>
+              <rect y="30" width="100" height="12"></rect>
+              <rect y="60" width="100" height="12"></rect>
+            </svg>
+          </button>
+      
+          <ul class="mob-menu">
+      
+            <li class="mob-item"><a class="link" href="#">Home</a></li>
+      
+            <li class="mob-item"><a class="link" href="#">Bathroom</a>
+              <ul class="mob-sub-menu">
+                <li class="mob-sub-item"><a href="#" class="sub-link">Bathroom Plumbing</a></li>
+                <li class="mob-sub-item"><a href="#" class="sub-link">Bathroom Renovation</a></li>
+              </ul>
+            </li>
+      
+            <li class="mob-item"><a class="link" href="#">General Plumbing</a>
+              <ul class="mob-sub-menu">
+                <li class="mob-sub-item"><a href="#" class="sub-link">Drain Cleaning Service</a></li>
+                <li class="mob-sub-item"><a href="#" class="sub-link">Blocked Drains</a></li>
+              </ul>
+            </li>
+      
+            <li class="mob-item"><a class="link" href="#">Kitchen</a></li>
+      
+            <li class="mob-item"><a class="link" href="#">Central Heating</a>
+              <ul class="mob-sub-menu">
+                <li class="mob-sub-item"><a href="#" class="sub-link">Boiler Repair Service</a></li>
+                <li class="mob-sub-item"><a href="#" class="sub-link">Gas Safety Check</a></li>
+              </ul>
+            </li>
+      
+            <li class="mob-item"><a class="link" href="#contact">Contact Us</a></li>
+      
+          </ul>
+        </nav>
+      </header>
+      
+      <!-- Contact Form -->
+      
+      <div class="spacer"></div>
+      
+      <div class="contact-center"  id="contact">
+      
+        <svg class="separate2" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 600">
+          <polygon points="1920 600 0 600 0 0 1920 517.5 1920 600" />
+        </svg>
+      
+        <div class="contact">
+          <h3>Email Us</h3>
+      
+          <form action="https://api.web3forms.com/submit" method="POST">
+      
+            <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
+            <input type="hidden" name="apikey" value="YOUR_ACCESS_KEY_HERE">
+      
+            <!-- Optional: Subject an be prefilled using type="hidden" 
+             or type="text" for normal user submitted input -->
+            <input type="hidden" name="subject" value="New Submission from Web3Forms">
+      
+            <!-- Optional: To send the form submission as CC email -->
+            <input type="hidden" name="ccemail" value="partner@example.com">
+      
+            <!-- Optional: Default replyto will be "email" (if available)
+             you may overwrite replyto with different email here -->
+            <input type="hidden" name="replyto" value="customer@example.com">
+      
+            <!-- Required: If submitting form without Javascript. 
+             Default web3forms output is in JSON format. -->
+            <!-- Not Required: If javascript, use "window.location.hash" instead -->
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+      
+            <!-- Optional: But Recommended: To Prevent SPAM Submission. 
+             Make sure its hidden by default -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+      
+            <!-- COMING SOON: Google reCaptcha v3: To Prevent SPAM Submission.
+             This feature available to PRO Plan users only -->
+            <!--   <input type="hidden" name="recaptcha_response" id="recaptchaResponse"> -->
+      
+            <!-- Custom Form Data: Form data you wish to receive in email. -->
+      
+            <p class="contact-name">
+              <label class="foot-contact-label" for="">name</label>
+              <input type="text" name="First Name" required>
+            </p>
+      
+            <p class="contact-email">
+              <label class="foot-contact-label" for="">email</label>
+              <input type="email" name="email" required>
+            </p>
+      
+            <p class="contact-msg">
+              <label class="foot-contact-label" for="">message</label>
+              <textarea name="message" required></textarea>
+            </p>
+      
+            <p class="contact-number">
+              <label class="foot-contact-label" for="">number (optional)</label>
+              <input type="text" name="Phone Number">
+            </p>
+      
+            <p class="contact-submit">
+              <button type="submit">Submit Form</button>
+            </p>
+      
+          </form>
+      
+        </div>
+      
+      </div>
+      
+      <!-- <div class="spacer"></div> -->
+      
+      <!-- Social Media -->
+      
+      <section class="social">
+        <svg class="separate1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        </svg>
+        <h2 class="social-CTA-mob">Find Us On Social Media</h2>
+        <div class="social-wrap">
+          <a href="https://twitter.com">
+            <svg class="twitter1" xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 1024 1024">
+              <path d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0 0 75-94a336.64 336.64 0 0 1-108.2 41.2A170.1 170.1 0 0 0 672 174c-94.5 0-170.5 76.6-170.5 170.6c0 13.2 1.6 26.4 4.2 39.1c-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 0 0-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 0 1-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 0 1-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9c-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850C671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2c33.2-24.3 62.3-54.4 85.5-88.2z" />
+            </svg>
+          </a>
+      
+          <a href="https://facebook.com">
+            <svg class="facebook1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512">
+              <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48c27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
+            </svg>
+          </a>
+      
+          <a href="https://instagram.com">
+            <svg class="insta1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+              <path d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z" />
+            </svg>
+          </a>
+          <h2 class="social-CTA-desk">Find Us On Social Media</h2>
+        </div>
+      </section>
+</body>
+</html>
